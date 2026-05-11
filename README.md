@@ -26,6 +26,8 @@ lvox auth login
 lvox generate "Hello from Leanvox!" -o hello.mp3
 lvox voices curated
 lvox transcribe meeting.mp3
+lvox transcribe long-meeting.mp3 --no-wait
+lvox jobs list --type stt
 ```
 
 ## Commands
@@ -36,7 +38,7 @@ lvox transcribe meeting.mp3
 | `stream` | Stream speech to file |
 | `dialogue` | Multi-speaker dialogue |
 | `transcribe` | Transcribe audio with speaker diarization |
-| `jobs list/get` | Manage async TTS jobs |
+| `jobs list/get` | Manage async TTS and STT jobs |
 | `voices` | List and manage voices |
 | `voices curated` | Browse 238 curated Pro voices |
 | `balance` | Check credit balance |
